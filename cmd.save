@@ -1,0 +1,512 @@
+mcsam@owlprints:~$ /root/opt/lampp/htdocs/
+bash: /root/opt/lampp/htdocs/: Permission denied
+mcsam@owlprints:~$ ln -s /opt/lampp/htdocs/ ~/Desktop/htdocs/
+ln: target '/home/mcsam/Desktop/htdocs/' is not a directory: No such file or directory
+mcsam@owlprints:~$ sudo service nginx stop
+[sudo] password for mcsam: 
+mcsam@owlprints:~$ sudo service nginx status
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset:>
+     Active: inactive (dead) since Mon 2022-02-07 15:42:15 IST; 7s ago
+       Docs: man:nginx(8)
+    Process: 33722 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT>
+   Main PID: 1017 (code=exited, status=0/SUCCESS)
+
+Feb 07 11:41:47 owlprints.in systemd[1]: Starting A high performance web server>
+Feb 07 11:41:48 owlprints.in systemd[1]: Started A high performance web server >
+Feb 07 15:42:10 owlprints.in systemd[1]: Stopping A high performance web server>
+Feb 07 15:42:15 owlprints.in systemd[1]: nginx.service: Succeeded.
+Feb 07 15:42:15 owlprints.in systemd[1]: Stopped A high performance web server >
+
+mcsam@owlprints:~$ 
+mcsam@owlprints:~$ 
+mcsam@owlprints:~$ 
+mcsam@owlprints:~$ pwd
+/home/mcsam
+mcsam@owlprints:~$ cd /opt/lampp/htdocs/crud/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git status
+fatal: not a git repository (or any of the parent directories): .git
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git init
+Initialized empty Git repository in /opt/lampp/htdocs/crud/.git/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git clone https://github.com/rajv22/crud.git
+Cloning into 'crud'...
+warning: You appear to have cloned an empty repository.
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  crud  .git
+mcsam@owlprints:/opt/lampp/htdocs/crud$ rm -r crud
+mcsam@owlprints:/opt/lampp/htdocs/crud$ rm -R .git/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git clone https://github.com/rajv22/crud.git .
+Cloning into '.'...
+warning: You appear to have cloned an empty repository.
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  .git
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd ..
+mcsam@owlprints:/opt/lampp/htdocs$ rm -R crud
+mcsam@owlprints:/opt/lampp/htdocs$ git clone https://github.com/rajv22/crud.git crud
+Cloning into 'crud'...
+warning: You appear to have cloned an empty repository.
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ nano index.html
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ git status
+fatal: not a git repository (or any of the parent directories): .git
+mcsam@owlprints:/opt/lampp/htdocs$ cd crud
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+mcsam@owlprints:/opt/lampp/htdocs/crud$ nano index.html
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  .git  index.html
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git add index.html 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git commit -m "My first commit"
+[master (root-commit) 619259f] My first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git push origin master
+Username for 'https://github.com': mcsam@owlprints:/opt/lampp/htdocs$ 
+Password for 'https://mcsam@owlprints:/opt/lampp/htdocs$ @github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/rajv22/crud.git/'
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh
+.ssh/      .ssh29nov/ .ssh_old/  
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh/
+id_rsa       id_rsa.pub   known_hosts  
+mcsam@owlprints:/opt/lampp/htdocs/crud$ pbcopy 
+dbconnection.php  .git/             insert.php        
+form.php          index.html        
+mcsam@owlprints:/opt/lampp/htdocs/crud$ pbcopy < ~/.ssh/id_rsa.pub 
+
+Command 'pbcopy' not found, did you mean:
+
+  command 'bcopy' from deb bacula-sd (9.4.2-2ubuntu5)
+
+Try: sudo apt install <deb name>
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCqlC1DMoDEZoqhapfgO68ohjIS0DHWqY50CqzD8EIFoSsfXn/uONm3267IiY2fhQuAIQbJ5bZo6ua1RDaf/KM0Ov/YXoXnVQU7jDMaHW9tDeZuy6D+f6PrlY08HFZEKQ1Y519wN5hEBhhpfB9dp0Wxgn0UTvyiVpKhiXu/wGoKwaDdOtPX+sjZ0aCGUZHhVIiRRTDP2n3YdlG+PTqHeUAsEyQsfOc4EFrSgiXOsTrS8b8WB8XLfXqyl9szmVZoOLudSIXzddWCwpzQt3fjTjOmCzm1kmTt9XLxrT4JgmkHJXMnLsi2hmWyrZqkhn9b7jc5dCF8bPwF3lCXv/HfY7XMiGeAMXnl6/eIO10dEo1ZygT/rgAGnPonjI9hsJjePOIlVcvmy/22YGtC/DKgnAUs8o3BY6vYDRJl8s6qbt09wwmn+KqvRk6O2u2B+vY4CdapRrwi251AYMlbJzgfvhzM1KmLgbzk40SBLyv/PLDvfpXR3jD11aL4r7hzjz8cSB0= mcsam@owlprints.in
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat .git/config 
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/rajv22/crud.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat .git/
+branches/       description     hooks/          logs/
+COMMIT_EDITMSG  FETCH_HEAD      index           objects/
+config          HEAD            info/           refs/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat .git/description 
+Unnamed repository; edit this file 'description' to name the repository.
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.3 LTS
+Release:	20.04
+Codename:	focal
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mcsam/.ssh/id_rsa): 
+/home/mcsam/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/mcsam/.ssh/id_rsa
+Your public key has been saved in /home/mcsam/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:LFhfxzWFPSB86Jz1ImEJ/zbkjPHekIA8q2sZ14q9GXY mcsam@owlprints.in
+The key's randomart image is:
++---[RSA 3072]----+
+|         .o.o.++.|
+|        . oB.+.o.|
+|      .  +=+B.. .|
+|     o o .o*X... |
+|    . . S....X.  |
+|       o.. .o +  |
+|       .*o.E . . |
+|       +oo+      |
+|      .. o.      |
++----[SHA256]-----+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-copy-id username@remote_host
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname remote_host: Temporary failure in name resolution
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-copy-id username@remote_host
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname remote_host: Temporary failure in name resolution
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-copy-id username@rajv22
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname rajv22: Temporary failure in name resolution
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id username@20.04.3 LTS
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id username@20.04.3
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id ubun^C0.04.3
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id Ubuntu@20.04.3
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id rajv22@20.04.3
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id username@server_host
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDzgtX4JwuZO5euKFAxQqmCL9xmU97/JMo68xj5ybKKV5p0LRySKQ/7wvUcQocr/+Moz41fOO7J+oxash8pzx5XHBLe8Lj8iiZnT4usJhtAEtdNdXMdsD3OKSBbKjdpjoMykfOofCkdsEg28gruH4jhoogNMCrClziQBVd9QtJ5zhzRMtWBzo1SxcpwxLWN2KbyzryEyN5Ytzz2UI4fWmOlagNJl06Tbs08TNgeBKeVOru7TMB8iqTlqmnrsLkVrpeKVAO9Hg1mpIqfHeChRy5EIJZ81eXt6CMiYkxcRh3ACpDzbe0PZ83pZCks+CUpmVwAjf3QqEBYIvu5YSGS0RwPPw5Fd/sRdU7CqADmffn6EFlkl80JGOUAD4caVM9mlAv6yKHYfzmmQL+JGqU5uXg/N056AQ9eCgV+jM4/C+jpx0YaHK1pfZwM4BRTJPO7ubk4bXkUjtFO6RMvoqMujpTew7zd2ZxhzyonT+XI8fLYSr2Sx6htGMyAgg0WVPwJ8B0= mcsam@owlprints.in
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ index.html
+index.html: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd/index.html
+bash: cd/index.html: No such file or directory
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  dbconnection.php  form.php  .git  index.html  insert.php
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd/index.html
+bash: cd/index.html: No such file or directory
+mcsam@owlprints:/opt/lampp/htdocs/crud$ index
+
+Command 'index' not found, did you mean:
+
+  command 'xindex' from deb texlive-extra-utils (2019.202000218-1)
+  command 'cindex' from deb codesearch (0.0~hg20120502-3)
+  command 'sindex' from deb biosquid (1.9g+cvs20050121-11)
+
+Try: sudo apt install <deb name>
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd/index.html
+bash: cd/index.html: No such file or directory
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git init
+Reinitialized existing Git repository in /opt/lampp/htdocs/crud/.git/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git commit -m "First commit Message"
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	dbconnection.php
+	form.php
+	insert.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+mcsam@owlprints:/opt/lampp/htdocs/crud$ use"git add index.html"First commit Message"
+> 
+> 
+> index.html
+mcsam@owlprints:~$ /root/opt/lampp/htdocs/
+bash: /root/opt/lampp/htdocs/: Permission denied
+mcsam@owlprints:~$ ln -s /opt/lampp/htdocs/ ~/Desktop/htdocs/
+ln: target '/home/mcsam/Desktop/htdocs/' is not a directory: No such file or directory
+mcsam@owlprints:~$ sudo service nginx stop
+[sudo] password for mcsam: 
+mcsam@owlprints:~$ sudo service nginx status
+● nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset:>
+     Active: inactive (dead) since Mon 2022-02-07 15:42:15 IST; 7s ago
+       Docs: man:nginx(8)
+    Process: 33722 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT>
+   Main PID: 1017 (code=exited, status=0/SUCCESS)
+
+Feb 07 11:41:47 owlprints.in systemd[1]: Starting A high performance web server>
+Feb 07 11:41:48 owlprints.in systemd[1]: Started A high performance web server >
+Feb 07 15:42:10 owlprints.in systemd[1]: Stopping A high performance web server>
+Feb 07 15:42:15 owlprints.in systemd[1]: nginx.service: Succeeded.
+Feb 07 15:42:15 owlprints.in systemd[1]: Stopped A high performance web server >
+
+mcsam@owlprints:~$ 
+mcsam@owlprints:~$ 
+mcsam@owlprints:~$ 
+mcsam@owlprints:~$ pwd
+/home/mcsam
+mcsam@owlprints:~$ cd /opt/lampp/htdocs/crud/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git status
+fatal: not a git repository (or any of the parent directories): .git
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git init
+Initialized empty Git repository in /opt/lampp/htdocs/crud/.git/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git clone https://github.com/rajv22/crud.git
+Cloning into 'crud'...
+warning: You appear to have cloned an empty repository.
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  crud  .git
+mcsam@owlprints:/opt/lampp/htdocs/crud$ rm -r crud
+mcsam@owlprints:/opt/lampp/htdocs/crud$ rm -R .git/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git clone https://github.com/rajv22/crud.git .
+Cloning into '.'...
+warning: You appear to have cloned an empty repository.
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  .git
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd ..
+mcsam@owlprints:/opt/lampp/htdocs$ rm -R crud
+mcsam@owlprints:/opt/lampp/htdocs$ git clone https://github.com/rajv22/crud.git crud
+Cloning into 'crud'...
+warning: You appear to have cloned an empty repository.
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ nano index.html
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ 
+mcsam@owlprints:/opt/lampp/htdocs$ git status
+fatal: not a git repository (or any of the parent directories): .git
+mcsam@owlprints:/opt/lampp/htdocs$ cd crud
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+mcsam@owlprints:/opt/lampp/htdocs/crud$ nano index.html
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  .git  index.html
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git add index.html 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git commit -m "My first commit"
+[master (root-commit) 619259f] My first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 index.html
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git push origin master
+Username for 'https://github.com': mcsam@owlprints:/opt/lampp/htdocs$ 
+Password for 'https://mcsam@owlprints:/opt/lampp/htdocs$ @github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/rajv22/crud.git/'
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh
+.ssh/      .ssh29nov/ .ssh_old/  
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh/
+id_rsa       id_rsa.pub   known_hosts  
+mcsam@owlprints:/opt/lampp/htdocs/crud$ pbcopy 
+dbconnection.php  .git/             insert.php        
+form.php          index.html        
+mcsam@owlprints:/opt/lampp/htdocs/crud$ pbcopy < ~/.ssh/id_rsa.pub 
+
+Command 'pbcopy' not found, did you mean:
+
+  command 'bcopy' from deb bacula-sd (9.4.2-2ubuntu5)
+
+Try: sudo apt install <deb name>
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCqlC1DMoDEZoqhapfgO68ohjIS0DHWqY50CqzD8EIFoSsfXn/uONm3267IiY2fhQuAIQbJ5bZo6ua1RDaf/KM0Ov/YXoXnVQU7jDMaHW9tDeZuy6D+f6PrlY08HFZEKQ1Y519wN5hEBhhpfB9dp0Wxgn0UTvyiVpKhiXu/wGoKwaDdOtPX+sjZ0aCGUZHhVIiRRTDP2n3YdlG+PTqHeUAsEyQsfOc4EFrSgiXOsTrS8b8WB8XLfXqyl9szmVZoOLudSIXzddWCwpzQt3fjTjOmCzm1kmTt9XLxrT4JgmkHJXMnLsi2hmWyrZqkhn9b7jc5dCF8bPwF3lCXv/HfY7XMiGeAMXnl6/eIO10dEo1ZygT/rgAGnPonjI9hsJjePOIlVcvmy/22YGtC/DKgnAUs8o3BY6vYDRJl8s6qbt09wwmn+KqvRk6O2u2B+vY4CdapRrwi251AYMlbJzgfvhzM1KmLgbzk40SBLyv/PLDvfpXR3jD11aL4r7hzjz8cSB0= mcsam@owlprints.in
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat .git/config 
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/rajv22/crud.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat .git/
+branches/       description     hooks/          logs/
+COMMIT_EDITMSG  FETCH_HEAD      index           objects/
+config          HEAD            info/           refs/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat .git/description 
+Unnamed repository; edit this file 'description' to name the repository.
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 20.04.3 LTS
+Release:	20.04
+Codename:	focal
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mcsam/.ssh/id_rsa): 
+/home/mcsam/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/mcsam/.ssh/id_rsa
+Your public key has been saved in /home/mcsam/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:LFhfxzWFPSB86Jz1ImEJ/zbkjPHekIA8q2sZ14q9GXY mcsam@owlprints.in
+The key's randomart image is:
++---[RSA 3072]----+
+|         .o.o.++.|
+|        . oB.+.o.|
+|      .  +=+B.. .|
+|     o o .o*X... |
+|    . . S....X.  |
+|       o.. .o +  |
+|       .*o.E . . |
+|       +oo+      |
+|      .. o.      |
++----[SHA256]-----+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-copy-id username@remote_host
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname remote_host: Temporary failure in name resolution
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-copy-id username@remote_host
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname remote_host: Temporary failure in name resolution
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ 
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ssh-copy-id username@rajv22
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+
+/usr/bin/ssh-copy-id: ERROR: ssh: Could not resolve hostname rajv22: Temporary failure in name resolution
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id username@20.04.3 LTS
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id username@20.04.3
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id ubun^C0.04.3
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id Ubuntu@20.04.3
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id rajv22@20.04.3
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ $ ssh-copy-id username@server_host
+$: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cat ~/.ssh/id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDzgtX4JwuZO5euKFAxQqmCL9xmU97/JMo68xj5ybKKV5p0LRySKQ/7wvUcQocr/+Moz41fOO7J+oxash8pzx5XHBLe8Lj8iiZnT4usJhtAEtdNdXMdsD3OKSBbKjdpjoMykfOofCkdsEg28gruH4jhoogNMCrClziQBVd9QtJ5zhzRMtWBzo1SxcpwxLWN2KbyzryEyN5Ytzz2UI4fWmOlagNJl06Tbs08TNgeBKeVOru7TMB8iqTlqmnrsLkVrpeKVAO9Hg1mpIqfHeChRy5EIJZ81eXt6CMiYkxcRh3ACpDzbe0PZ83pZCks+CUpmVwAjf3QqEBYIvu5YSGS0RwPPw5Fd/sRdU7CqADmffn6EFlkl80JGOUAD4caVM9mlAv6yKHYfzmmQL+JGqU5uXg/N056AQ9eCgV+jM4/C+jpx0YaHK1pfZwM4BRTJPO7ubk4bXkUjtFO6RMvoqMujpTew7zd2ZxhzyonT+XI8fLYSr2Sx6htGMyAgg0WVPwJ8B0= mcsam@owlprints.in
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ^C
+mcsam@owlprints:/opt/lampp/htdocs/crud$ index.html
+index.html: command not found
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd/index.html
+bash: cd/index.html: No such file or directory
+mcsam@owlprints:/opt/lampp/htdocs/crud$ ls -a
+.  ..  dbconnection.php  form.php  .git  index.html  insert.php
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd/index.html
+bash: cd/index.html: No such file or directory
+mcsam@owlprints:/opt/lampp/htdocs/crud$ index
+
+Command 'index' not found, did you mean:
+
+  command 'xindex' from deb texlive-extra-utils (2019.202000218-1)
+  command 'cindex' from deb codesearch (0.0~hg20120502-3)
+  command 'sindex' from deb biosquid (1.9g+cvs20050121-11)
+
+Try: sudo apt install <deb name>
+
+mcsam@owlprints:/opt/lampp/htdocs/crud$ cd/index.html
+bash: cd/index.html: No such file or directory
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git init
+Reinitialized existing Git repository in /opt/lampp/htdocs/crud/.git/
+mcsam@owlprints:/opt/lampp/htdocs/crud$ git commit -m "First commit Message"
+On branch master
+Your branch is based on 'origin/master', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	dbconnection.php
+	form.php
+	insert.php
+
+nothing added to commit but untracked files present (use "git add" to track)
+mcsam@owlprints:/opt/lampp/htdocs/crud$ use"git add index.html"First commit Message"
+> 
+> 
+> index.html
